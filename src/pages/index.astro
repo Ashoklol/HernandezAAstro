@@ -1,4 +1,10 @@
 ---
+import "../styles/global.css";
+import PageHeader from "../components/PageHeader.astro";
+import PageFooter from "../components/PageFooter.astro";
+import PageFeatures from "../components/PageFeatures.astro";
+import PageContent from "../components/PageContent.astro";
+import PageSemesters from "../components/PageSemesters.astro";
 
 ---
 
@@ -8,131 +14,35 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Theme Build For Astro</title>
 	</head>
 	<body>
-		
-    <!-- Begin page Header -->
-    <header id="pageheader">pageheader</header>
-    <!-- End Page Header -->
-
+	<!-- 
+        pageheader
+        showcase
+        features
+        pagecontent
+        semesters
+        pagefooter
+    -->
+    <PageHeader/> 
 
     <!-- Begin Showcase -->
     <section id="showcase">showcase</section>
     <!-- End Showcase -->
 
 
-    <!-- Begin Features -->
-    <section id="features">features</section>
-    <!-- End Features -->
+    <PageFeatures/>
 
 
-    <!-- Begin PageContent -->
-    <main id="pagecontent">pagecontent</main>
-    <!-- End PageContent -->
+    <PageContent/>
 
 
-    <!-- Begin Semesters -->
-    <section id="semesters">semesters</section>
-    <!-- End Semesters -->
+    <PageSemesters/>
 
+    
+    <PageFooter/>
 
-    <!-- Begin Pagefooter -->
-    <footer id="pagefooter">pagefooter</footer>
-    <!-- End Pagefooter -->
 
 	</body>
 </html>
-
-<style>
-    :root{
-        --color-primary:lightpink;
-        --color-secondary:lightcyan;
-    }
-    /* reset pagging and margins of browsers */
-    *, *::before, *::after{
-        box-sizing: border-box;
-        margin:0;
-        padding:0;
-    }
-    html{
-        font-size: 62.5%;
-        /* allows u to use rems instead of pixels */
-        /* when 5px = 0.05 rem */
-        /*
-        1 rem = 10px;
-        1.6rem = 16px;
-        2rem = 20px;
-        6rem = 60px;
-        */
-    }
-    /* Easy Pixel Calculations with rem units */
-    body{
-        font-size:1.6rem;
-    }
-
-    /* Fix browser bounce on macs */
-    body{
-        overflow-x:auto;
-        width:100%;
-        overscroll-behavior: none;
-    }
-    /* media queries */
-    @media only screen and (min-width:320px){
-        body{
-            background-color: lightpink;
-        }
-    }
-    @media only screen and (min-width:480px){
-        body{
-            background-color: lightblue;
-        }
-    }
-    @media only screen and (min-width:768px){
-        body{
-            background-color: lightgoldenrodyellow;
-        }
-    }
-    @media only screen and (min-width:1024px){
-        body{
-            background-color: lightgreen;
-        }
-    }
-    @media only screen and (min-width:1200px){
-        body{
-            background-color: lightcyan;
-        }
-    }
-
-    #pageheader{
-        min-height:200px;
-        padding:1rem;
-        background-color: lightpink;
-    }
-    #showcase{
-        min-height:200px;
-        padding:1rem;
-        background-color: lightblue;
-
-    }
-    #features{
-        min-height:200px;
-        padding:1rem;
-        background-color: #fff;
-    }
-    #pagecontent{
-        min-height:200px;
-        padding:1rem;
-        background-color: lightgoldenrodyellow;
-    }
-    #semesters{
-        min-height:200px;
-        padding:1rem;
-        background-color: lightgreen;
-    }
-    #pagefooter{
-        min-height:200px;
-        padding:1rem;
-        background-color: lightcyan;
-    }
-</style>
