@@ -5,19 +5,20 @@ import PageFooter from "../components/PageFooter.astro";
 import PageFeatures from "../components/PageFeatures.astro";
 import PageContent from "../components/PageContent.astro";
 import PageSemesters from "../components/PageSemesters.astro";
+import PageShowcase from "../components/PageShowcase.astro";
 
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Theme Build For Astro</title>
-	</head>
-	<body>
-	<!-- 
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Theme Build For Astro</title>
+</head>
+<body>
+    <!-- 
         pageheader
         showcase
         features
@@ -25,24 +26,16 @@ import PageSemesters from "../components/PageSemesters.astro";
         semesters
         pagefooter
     -->
-    <PageHeader/> 
+    <PageHeader />
 
-    <!-- Begin Showcase -->
-    <section id="showcase">showcase</section>
-    <!-- End Showcase -->
+    <PageShowcase />
 
+    <PageFeatures />
 
-    <PageFeatures/>
+    <PageContent />
 
+    <PageSemesters />
 
-    <PageContent/>
-
-
-    <PageSemesters/>
-
-    
-    <PageFooter/>
-
-
-	</body>
+    <PageFooter />
+</body>
 </html>
