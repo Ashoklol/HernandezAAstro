@@ -26,6 +26,7 @@
         font-size:1.6rem;
         font-family: Arial, Helvetica, sans-serif;
         line-height: 1.7;
+    
     }
 
     /* Fix browser bounce on macs */
@@ -33,6 +34,8 @@
         overflow-x:auto;
         width:100%;
         overscroll-behavior: none;
+        background-image: linear-gradient(to bottom, cyan, burlywood);
+        background-color: red;
     }
 
     a{
@@ -71,10 +74,13 @@
         background-color: aqua;
         border:2px dashed none;
         display:flex;
+        width:100%;
         justify-content: space-between;
         align-items: center;
         height:100%;
+        max-width: 100%;
         padding:0 2rem 0 2rem;
+
     }
     .logo img{
         height:6rem;
@@ -108,9 +114,13 @@
     }
     #menu li a{
         color:black;
+    
     }
+    #menu li a:hover{
+        color:whitesmoke;
+        text-shadow:0 0 .2rem rgb(12, 103, 103);
 
-
+    }
 
         /* SHOWCASE styles */
 
@@ -131,12 +141,14 @@
         text-align: center;
         margin:5rem auto;
         max-width:60rem;
+
     }
 
     #showcase h1{
         font-size:5rem;
         margin-bottom:2rem;
-        text-shadow:0 0 1rem black;
+        text-shadow:0 0 1rem #134745;
+        color:white;
     }
     #showcase blockquote{
         font-size:2.4rem;
@@ -153,6 +165,7 @@
         color:white;
         text-align: center;
         font-size: 3rem;
+        text-shadow:0 0 1rem #134745;
     }
 
     #logosbig{
@@ -185,7 +198,7 @@
     .card{
         background-color: white;
         padding:2rem;
-        box-shadow: 0rem 0rem 1rem silver;
+        box-shadow: .5rem .3rem 1rem  gray;
         margin-bottom:2rem;
         border-radius:2.5rem;
     }
@@ -323,7 +336,7 @@
     }
     @media only screen and (min-width:1024px){
         #features{
-            background-color: coral;
+            background-image: linear-gradient(to bottom, #96ddc7, lightgoldenrodyellow);
         }
         #logosbig{
             display: block;
@@ -338,7 +351,7 @@
     }
     @media only screen and (min-width:1200px){
         #features{
-            background-color: cyan;
+            background-image: linear-gradient(to bottom, #96ddc7, lightgoldenrodyellow);
         }
         #pagefooterlinks{
             display: block;
