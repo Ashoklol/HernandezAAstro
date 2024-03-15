@@ -9,6 +9,7 @@
         margin:0;
         padding:0;
     }
+
     html{
         font-size: 62.5%;
         /* allows u to use rems instead of pixels */
@@ -34,8 +35,8 @@
         overflow-x:auto;
         width:100%;
         overscroll-behavior: none;
-        background-image: linear-gradient(to bottom, cyan, burlywood);
-        background-color: red;
+        background-image: linear-gradient( #bfb3eb, #b3ace8);
+        background-color: #b3ace8;
     }
 
     a{
@@ -71,7 +72,7 @@
 
     /* Special Header container */
     #pageheader .container{
-        background-color: aqua;
+        background-color: #fffefe;
         border:2px dashed none;
         display:flex;
         width:100%;
@@ -82,22 +83,23 @@
         padding:0 2rem 0 2rem;
 
     }
+    
     .logo img{
-        height:6rem;
-    }
-    .logo:hover{
+        height:9rem;
+        padding-top:10px;
         animation-name: swim;
-        animation-duration: 5s;
         animation-iteration-count: infinite;
-        animation-direction: alternate-reverse;
+        animation-duration: 2s;
         animation-timing-function: linear;
+        animation-direction: alternate-reverse;
     }
+    
     @keyframes swim{
         from{
-            transform: rotate(0deg);
+            transform: rotate(-5deg);
         }
         to{
-            transform: rotate(45deg);
+            transform: rotate(40deg);
         }
     }
     
@@ -113,12 +115,13 @@
         background-color: none;
     }
     #menu li a{
-        color:black;
+        color:white;
+        text-shadow:0 0 1rem #604e68;
     
     }
     #menu li a:hover{
-        color:whitesmoke;
-        text-shadow:0 0 .2rem rgb(12, 103, 103);
+        color:#403b80;
+        text-shadow:0 0 .5px #8d7b95;
 
     }
 
@@ -126,13 +129,13 @@
 
     #showcase{
         border:.2rem solid none;
-        background-color: var(--color-primary);
+        background-color: #b3ace8;
         padding:3rem;
-        background-image: linear-gradient(to bottom, cyan, burlywood);
+        background-image:url(images/pmusicnotesbg.jpeg);
         background-repeat: no-repeat;
         background-size: cover;
-        background-attachment: fixed;
-        background-position: bottom left;
+        
+        background-position:center;
     }
 
     #showcasetext{
@@ -141,13 +144,14 @@
         text-align: center;
         margin:5rem auto;
         max-width:60rem;
+        text-shadow:0 0 1rem #403b80;
 
     }
 
     #showcase h1{
         font-size:5rem;
         margin-bottom:2rem;
-        text-shadow:0 0 1rem #134745;
+        text-shadow:.2rem 0 1rem #403b80;
         color:white;
     }
     #showcase blockquote{
@@ -160,12 +164,15 @@
     #showcaseimage img{
         border-radius: 1rem;
         margin:auto;
+        border:3px dashed #604e68;
+        padding:10px;
+        background-color: #403b8073;
     }
     #showcaseintro{
         color:white;
         text-align: center;
         font-size: 3rem;
-        text-shadow:0 0 1rem #134745;
+        text-shadow:0 0 1rem #604e68;
     }
 
     #logosbig{
@@ -183,11 +190,13 @@
         min-height:200px;
         padding:1rem;
         background-color: #fff; */
-    
+    #features{
+        background-image: linear-gradient(to bottom, #d0c5f2, #bfb3eb);
+    }
     #features .container{
         padding-top:2rem;
         background-color: burlywood;
-        background-image: linear-gradient(to bottom, #96ddc7, lightgoldenrodyellow);
+        background-image: linear-gradient(to bottom, #d0c5f2, #cebfd6);
         border:2px dashed none;
         display:flex;
         gap:1rem;
@@ -198,7 +207,7 @@
     .card{
         background-color: white;
         padding:2rem;
-        box-shadow: .5rem .3rem 1rem  gray;
+        box-shadow: .3rem .3rem .8rem  #403b80;
         margin-bottom:2rem;
         border-radius:2.5rem;
     }
@@ -209,7 +218,7 @@
         min-height:200px;
         padding:2rem 0 2rem 0;
         background-color: lightgoldenrodyellow;
-        background-image: linear-gradient(to bottom, lightgoldenrodyellow, #91ee90);
+        background-image: linear-gradient(to bottom, #cebfd6, #fffefe);
     }
     #pagecontent h2, h3{
         padding:2rem;
@@ -226,7 +235,7 @@
         min-height:200px;
         padding:2rem 0 2rem 0;
         background-color: lightgreen;
-        background-image: linear-gradient(to bottom, #91ee90, pink);
+        background-image: linear-gradient(to bottom, #fdfcfd, #dbc8d8);
     }
     #semesters h2, #semesters h3{
         padding:2rem 0 2rem 0;
@@ -243,13 +252,14 @@
 
     /* THUMBNAIL SECTIONS OF SEMESTERS */
     .thumbnail{
-        background-color: burlywood;
-        border:2px dashed black;
+        background-color: #d1c3d8;
+        border:2px solid whitesmoke;
         display:flex;
         justify-content: space-evenly;
         align-items: center;
         flex-wrap: wrap;
         align-content: center;
+        box-shadow: .2rem .2rem 1rem  #403b80;
     }
     .thumb{
         width:150px;
@@ -270,32 +280,54 @@
         text-align: center;
         padding:2rem;
         padding-top:6rem;
-        background-color: var(--color-primary);
+        background-color: #dbc8d8;
 
     }
     #pagefooter .container{
-        background-color: pink;
-        border:2px dashed white;
+        background-color: #decbda;
+        border:2px dashed #604e68;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
     }
     #pagefooter a{
         color:#fff;
+        text-decoration: none;
     }
     #pagefooter a:hover{
-        color:#b7c1bf;
+        color:darkmagenta;
+        text-shadow:0 0 .2rem #604e68;
     }
     #pagefooter h3{
         padding-bottom:3rem;
+        text-shadow:0 0 .2rem #604e68;
+    }
+    #pagefooter #author{
+        color:#736279;
+        text-shadow:none;
+        
+        font-size:12px;
     }
     #pagefooter #quote{
-        text-align: left;
-    }
-    #pagefooterlinks{
+        color:#604e68;
+        text-shadow:0 0 .2rem white;
         
     }
-
+    #pagefooterlinks{
+        text-shadow:0 0 .2rem #604e68;
+        text-decoration: none;
+        display: none;
+    }
+    blockquote::before{
+        font-size:20px;
+        background-color: none;
+        content:"“"
+    }
+    blockquote::after{
+        font-size:20px;
+        background-color: none;
+        content:"”"
+    }
 
 
     @keyframes tilt{
@@ -312,14 +344,32 @@
     /* media queries */
     @media only screen and (min-width:320px){
         #features{
-            background-color: magenta;
+            background-color: #d0c5f2;
         }
     }
     @media only screen and (min-width:480px){
         #features{
             background-color: blue;
         }
+        #pagefooter h3{
+            padding-bottom:1.5rem;
+            text-shadow:0 0 .2rem #604e68;
+        }
+        #showcase{
+            border:.2rem solid none;
+            background-color: var(--color-primary);
+            padding:3rem;
+            background-image:url(images/pmusicnotesbg.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            background-position:center;
+        }
+
+        #features{
+        background-image: linear-gradient(to bottom, #cfc3eb, #cebfd6);
     }
+}
     @media only screen and (min-width:768px){
         #features{
             background-color: yellow;
@@ -333,10 +383,41 @@
         h1,h2{
             text-align: center;
         }
+        #pageheader .container{
+            position:sticky;
+        }
+        #pagefooterlinks{
+            text-shadow:0 0 .2rem #604e68;
+            text-decoration: none;
+            
+        }
+        #pagefooter h3{
+            padding-bottom:1.5rem;
+            text-shadow:0 0 .2rem #604e68;
+        }
+        #showcase{
+            border:.2rem solid none;
+            background-color: var(--color-primary);
+            padding:3rem;
+            background-image:url(images/pmusicnotesbg.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+    
+            background-position:bottom 0 center;
+        }
+        #features{
+            background-image: linear-gradient(to bottom, #cfc3eb, #cebfd6);
+        }
+        #features .container{
+            padding-top:2rem;
+            background-image: linear-gradient(to bottom, #c0b4ea, #cebfd6);
+        
+        }
     }
+    
     @media only screen and (min-width:1024px){
         #features{
-            background-image: linear-gradient(to bottom, #96ddc7, lightgoldenrodyellow);
+            background-image: linear-gradient(to bottom, #bfb3eb, #cebfd6);
         }
         #logosbig{
             display: block;
@@ -348,13 +429,69 @@
         #logossmall{
             display: none;
         }
+        #showcase{
+            border:.2rem solid none;
+            background-color: var(--color-primary);
+            padding:3rem;
+            background-image:url(images/pmusicnotesbg.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            background-position:bottom 0rem center;
+        }
     }
     @media only screen and (min-width:1200px){
         #features{
-            background-image: linear-gradient(to bottom, #96ddc7, lightgoldenrodyellow);
+            background-image: linear-gradient(to bottom, #bfb3eb #cebfd6);;
         }
         #pagefooterlinks{
             display: block;
+            background-color: none;
+            gap: -2rem;
+        }
+        #pagefooterlinks p{
+            display: block;
+            background-color: none;
+            margin-top:-.5rem;
+        }
+
+        #showcase{
+            border:.2rem solid none;
+            background-color: var(--color-primary);
+            padding:3rem;
+            background-image:url(images/pmusicnotesbg.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            background-position:bottom -9rem center;
+        }
+    }
+    @media only screen and (min-width:1400px){
+        #features{
+            background-image: linear-gradient(to bottom, #b8b0e8, #cebfd6);;
+        }
+        #pagefooterlinks{
+            display: block;
+        }
+        #showcase{
+            border:.2rem solid none;
+            background-color: var(--color-primary);
+            padding:3rem;
+            background-image:url(images/pmusicnotesbg.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            background-position:bottom -15rem center;
+        }
+        #features .container{
+            padding-top:2rem;
+            background-color: burlywood;
+            background-image: linear-gradient(to bottom, #b8b0e8, #cebfd6);
+            border:2px dashed none;
+            display:flex;
+            gap:1rem;
+            justify-content: space-between;
+            flex-direction:row;
         }
     }
 
