@@ -319,12 +319,12 @@
         display: none;
     }
     blockquote::before{
-        font-size:20px;
+        font-size:24px;
         background-color: none;
         content:"“"
     }
     blockquote::after{
-        font-size:20px;
+        font-size:24px;
         background-color: none;
         content:"”"
     }
@@ -359,7 +359,7 @@
             border:.2rem solid none;
             background-color: var(--color-primary);
             padding:3rem;
-            background-image:url(images/pmusicnotesbg.jpeg);
+            background-image:url(/images/pmusicnotesbg.jpeg);
             background-repeat: no-repeat;
             background-size: cover;
             
