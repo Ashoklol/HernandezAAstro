@@ -9,7 +9,6 @@
         margin:0;
         padding:0;
     }
-
     html{
         font-size: 62.5%;
         /* allows u to use rems instead of pixels */
@@ -463,7 +462,7 @@
             background-repeat: no-repeat;
             background-size: cover;
             
-            background-position:bottom -9rem center;
+            background-position:bottom center;
         }
     }
     @media only screen and (min-width:1400px){
@@ -481,7 +480,7 @@
             background-repeat: no-repeat;
             background-size: cover;
             
-            background-position:bottom -15rem center;
+            background-position:bottom center;
         }
         #features .container{
             padding-top:2rem;
