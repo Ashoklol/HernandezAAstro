@@ -290,16 +290,19 @@
         align-items: center;
     }
     #pagefooter a{
-        color:#fff;
-        text-decoration: none;
+        color:white;
+        text-shadow:0 0 1rem #604e68;
     }
     #pagefooter a:hover{
-        color:darkmagenta;
-        text-shadow:0 0 .2rem #604e68;
+        color:#403b80;
+        text-shadow:0 0 .5px #8d7b95;
+
     }
     #pagefooter h3{
         padding-bottom:3rem;
         text-shadow:0 0 .2rem #604e68;
+        color:white;
+        text-shadow:0 0 1rem #604e68;
     }
     #pagefooter #author{
         color:#736279;
@@ -401,7 +404,7 @@
             background-repeat: no-repeat;
             background-size: cover;
     
-            background-position:bottom center;
+            background-position:bottom -3rem center;
         }
         #features{
             background-image: linear-gradient(to bottom, #cfc3eb, #cebfd6);
@@ -458,12 +461,12 @@
             background-image:url(/images/pmusicnotesbg.jpeg);
             background-repeat: no-repeat;
             background-size: cover;
-            background-position:bottom center;
+            background-position:bottom -7rem center;
         }
     }
     @media only screen and (min-width:1400px){
         #features{
-            background-image: linear-gradient(to bottom, #b8b0e8, #cebfd6);;
+            background-image: linear-gradient(to bottom, #c0b0e9, #cebfd6);;
         }
         #pagefooterlinks{
             display: block;
@@ -476,12 +479,12 @@
             background-repeat: no-repeat;
             background-size: cover;
             
-            background-position:bottom center;
+            background-position:bottom -15rem center;
         }
         #features .container{
             padding-top:2rem;
             background-color: burlywood;
-            background-image: linear-gradient(to bottom, #b8b0e8, #cebfd6);
+            background-image: linear-gradient(to bottom, #c0b0e9, #cebfd6);
             border:2px dashed none;
             display:flex;
             gap:1rem;
