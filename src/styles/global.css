@@ -246,13 +246,14 @@
         font-size:2.5rem;}
     
     .assignments a {
-        color:#2d6858;
+        color:#6b5c9f;
+        text-shadow: 1px 1px #403b80;
     }
 
     /* THUMBNAIL SECTIONS OF SEMESTERS */
     .thumbnail{
         background-color: #d1c3d8;
-        border:2px solid whitesmoke;
+        border:2px solid #403b80;
         display:flex;
         justify-content: space-evenly;
         align-items: center;
@@ -263,7 +264,8 @@
     .thumb{
         width:150px;
         height:150px;
-
+        transform: scale(.8);
+        border:1px solid white;
     }
 
     .thumb:hover{
