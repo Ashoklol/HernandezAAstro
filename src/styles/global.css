@@ -1,497 +1,65 @@
-
-    :root{
-        --color-primary:lightpink;
-        --color-secondary:lightcyan;
-    }
-    /* reset pagging and margins of browsers */
-    *, *::before, *::after{
-        box-sizing: border-box;
-        margin:0;
-        padding:0;
-    }
-    html{
-        font-size: 62.5%;
-        /* allows u to use rems instead of pixels */
-        /* when 5px = 0.05 rem */
-        /*
-        1 rem = 10px;
-        1.6rem = 16px;
-        2rem = 20px;
-        6rem = 60px;
-        */
-    }
-    
-    /* Easy Pixel Calculations with rem units */
-    body{
-        font-size:1.6rem;
-        font-family: Arial, Helvetica, sans-serif;
-        line-height: 1.7;
-    
-    }
-
-    /* Fix browser bounce on macs */
-    body{
-        overflow-x:auto;
-        width:100%;
-        overscroll-behavior: none;
-        background-image: linear-gradient( #bfb3eb, #b3ace8);
-        background-color: #b3ace8;
-    }
-
-    a{
-        color:white;
-        text-decoration: none;
-    }
-    p{
-        margin:1rem 0 1rem 0;
-    }
-    h1,h2{
-        text-align: center;
-    }
-    h1,h2, h3{
-        line-height:1.2;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-    }
-    li{
-        line-height:2;
-    }
-    /* General Mobile FIrst CSS */
-
-    .container{
-
-        max-width:120.0rem;
-        margin:auto;
-        padding:0 3rem 0 3rem;
-    }
-
-    /* Header styles */
-    #pageheader{background-color: var(--color-primary);
-        height:7.0rem;
-    }
-
-    /* Special Header container */
-    #pageheader .container{
-        background-color: #fffefe;
-        border:2px dashed none;
-        display:flex;
-        width:100%;
-        justify-content: space-between;
-        align-items: center;
-        height:100%;
-        max-width: 100%;
-        padding:0 2rem 0 2rem;
-
-    }
-    
-    .logo img{
-        height:9rem;
-        padding-top:10px;
-        animation-name: swim;
-        animation-iteration-count: infinite;
-        animation-duration: 2s;
-        animation-timing-function: linear;
-        animation-direction: alternate-reverse;
-    }
-    
-    @keyframes swim{
-        from{
-            transform: rotate(-5deg);
-        }
-        to{
-            transform: rotate(40deg);
-        }
-    }
-    
-
-    /*  Header Menu */
-    #menu{
-        background-color: none;
-        border:2px dashed none;
-        display:flex;
-        justify-content: space-between;
-        width:20rem;
-        list-style-type: none;
-        background-color: none;
-    }
-    #menu li a{
-        color:white;
-        text-shadow:0 0 1rem #604e68;
-    
-    }
-    #menu li a:hover{
-        color:#403b80;
-        text-shadow:0 0 .5px #8d7b95;
-
-    }
-
-        /* SHOWCASE styles */
-
-    #showcase{
-        border:.2rem solid none;
-        background-color: #b3ace8;
-        padding:3rem;
-        background-image:url(/images/pmusicnotesbg.jpeg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        
-        background-position:center;
-    }
-
-    #showcasetext{
-        border:.2rem solid none;
-        color:white;
-        text-align: center;
-        margin:5rem auto;
-        max-width:60rem;
-        text-shadow:0 0 1rem #403b80;
-
-    }
-
-    #showcase h1{
-        font-size:5rem;
-        margin-bottom:2rem;
-        text-shadow:.2rem 0 1rem #403b80;
-        color:white;
-    }
-    #showcase blockquote{
-        font-size:2.4rem;
-        margin-bottom:2rem;
-    }
-    #showcaseimage{
-        text-align:center;
-    }
-    #showcaseimage img{
-        border-radius: 1rem;
-        margin:auto;
-        border:3px dashed #604e68;
-        padding:10px;
-        background-color: #403b8073;
-    }
-    #showcaseintro{
-        color:white;
-        text-align: center;
-        font-size: 3rem;
-        text-shadow:0 0 1rem #604e68;
-    }
-
-    #logosbig{
-        display:none;
-    }
-    #logossmall{
-        width:30rem;
-    }
-    /* End of showcase section styles */
-
-
-    
-    /* FEATURES */
-    /* #features{
-        min-height:200px;
-        padding:1rem;
-        background-color: #fff; */
-    #features{
-        background-image: linear-gradient(to bottom, #d0c5f2, #bfb3eb);
-    }
-    #features .container{
-        padding-top:2rem;
-        background-color: burlywood;
-        background-image: linear-gradient(to bottom, #d0c5f2, #cebfd6);
-        border:2px dashed none;
-        display:flex;
-        gap:1rem;
-        justify-content: space-between;
-        flex-direction:column;
-    }
-
-    .card{
-        background-color: white;
-        padding:2rem;
-        box-shadow: .3rem .3rem .8rem  #403b80;
-        margin-bottom:2rem;
-        border-radius:2.5rem;
-    }
-    
-    /* PAGE CONTENT */
-    
-    #pagecontent{
-        min-height:200px;
-        padding:2rem 0 2rem 0;
-        background-color: lightgoldenrodyellow;
-        background-image: linear-gradient(to bottom, #cebfd6, #fffefe);
-    }
-    #pagecontent h2, h3{
-        padding:2rem;
-    }
-    #pagecontent h2{
-        font-size:4rem;
-    }
-    #pagecontent h3{
-        font-size:2.5rem;
-    }
-
-    /*  SEMESTERS */
-    #semesters{
-        min-height:200px;
-        padding:2rem 0 2rem 0;
-        background-color: lightgreen;
-        background-image: linear-gradient(to bottom, #fdfcfd, #dbc8d8);
-    }
-    #semesters h2, #semesters h3{
-        padding:2rem 0 2rem 0;
-    }
-    #semesters h2{
-        font-size:4rem;
-    }
-    #semesters h3{
-        font-size:2.5rem;}
-    
-    .assignments a {
-        color:#6b5c9f;
-        text-shadow: 1px 1px #403b80;
-    }
-
-    /* THUMBNAIL SECTIONS OF SEMESTERS */
-    .thumbnail{
-        background-color: #d1c3d8;
-        border:2px solid #403b80;
-        display:flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-wrap: wrap;
-        align-content: center;
-        box-shadow: .2rem .2rem 1rem  #403b80;
-    }
-    .thumb{
-        width:150px;
-        height:150px;
-        transform: scale(.8);
-        border:1px solid white;
-    }
-
-    .thumb:hover{
-        animation-name: tilt;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-    }
-    
-    /* PAGE FOOTER */
-
-    #pagefooter{
-        color:#fff;
-        text-align: center;
-        padding:2rem;
-        padding-top:6rem;
-        background-color: #dbc8d8;
-
-    }
-    #pagefooter .container{
-        background-color: #decbda;
-        border:2px dashed #604e68;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    #pagefooter a{
-        color:white;
-        text-shadow:0 0 1rem #604e68;
-    }
-    #pagefooter a:hover{
-        color:#403b80;
-        text-shadow:0 0 .5px #8d7b95;
-
-    }
-    #pagefooter h3{
-        padding-bottom:3rem;
-        text-shadow:0 0 .2rem #604e68;
-        color:white;
-        text-shadow:0 0 1rem #604e68;
-    }
-    #pagefooter #author{
-        color:#736279;
-        text-shadow:none;
-        
-        font-size:12px;
-    }
-    #pagefooter #quote{
-        color:#604e68;
-        text-shadow:0 0 .2rem white;
-        
-    }
-    #pagefooterlinks{
-        text-shadow:0 0 .2rem #604e68;
-        text-decoration: none;
-        display: none;
-    }
-    blockquote::before{
-        font-size:24px;
-        background-color: none;
-        content:"“"
-    }
-    blockquote::after{
-        font-size:24px;
-        background-color: none;
-        content:"”"
-    }
-
-
-    @keyframes tilt{
-        from{
-            transform: rotate(0deg);
-        }
-        to{
-            transform: rotate(-15deg);
-        }
-    }
-
-
-
-    /* media queries */
-    @media only screen and (min-width:320px){
-        #features{
-            background-color: #d0c5f2;
-        }
-    }
-    @media only screen and (min-width:480px){
-        #features{
-            background-color: blue;
-        }
-        #pagefooter h3{
-            padding-bottom:1.5rem;
-            text-shadow:0 0 .2rem #604e68;
-        }
-        #showcase{
-            border:.2rem solid none;
-            
-            padding:3rem;
-            background-image:url(/images/pmusicnotesbg.jpeg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            
-            background-position:center;
-        }
-
-        #features{
-        background-image: linear-gradient(to bottom, #cfc3eb, #cebfd6);
-    }
+:root{
+    --color-primary:lightpink;
+    --color-secondary:lightcyan;
 }
-    @media only screen and (min-width:768px){
-        #features{
-            background-color: yellow;
-        }
-        .card{
-            flex-basis:30%;
-        }
-        #features .container{
-            flex-direction: row;
-        }
-        h1,h2{
-            text-align: center;
-        }
-        #pageheader .container{
-            position:sticky;
-        }
-        #pagefooterlinks{
-            text-shadow:0 0 .2rem #604e68;
-            text-decoration: none;
-            
-        }
-        #pagefooter h3{
-            padding-bottom:1.5rem;
-            text-shadow:0 0 .2rem #604e68;
-        }
-        #showcase{
-            border:.2rem solid none;
-            padding:3rem;
-            background-image:url(/images/pmusicnotesbg.jpeg);
-            background-repeat: no-repeat;
-            background-size: cover;
-    
-            background-position:bottom -3rem center;
-        }
-        #features{
-            background-image: linear-gradient(to bottom, #cfc3eb, #cebfd6);
-        }
-        #features .container{
-            padding-top:2rem;
-            background-image: linear-gradient(to bottom, #c0b4ea, #cebfd6);
-        
-        }
-    }
-    
-    @media only screen and (min-width:1024px){
-        #features{
-            background-image: linear-gradient(to bottom, #bfb3eb, #cebfd6);
-        }
-        #logosbig{
-            display: block;
-            margin: auto;
-        }
-        #showcase blockquote{
-            text-align: center;
-        }
-        #logossmall{
-            display: none;
-        }
-        #showcase{
-            border:.2rem solid none;
-            padding:3rem;
-            background-image:url(/images/pmusicnotesbg.jpeg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            
-            background-position:bottom -1rem center;
-        }
-    }
-    @media only screen and (min-width:1200px){
-        #features{
-            background-image: linear-gradient(to bottom, #bfb3eb #cebfd6);;
-        }
-        #pagefooterlinks{
-            display: block;
-            background-color: none;
-            gap: -2rem;
-        }
-        #pagefooterlinks p{
-            display: block;
-            background-color: none;
-            margin-top:-.5rem;
-        }
+/* reset pagging and margins of browsers */
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+html{
+    font-size: 62.5%;
+    /* allows u to use rems instead of pixels */
+    /* when 5px = 0.05 rem */
+    /*
+    1 rem = 10px;
+    1.6rem = 16px;
+    2rem = 20px;
+    6rem = 60px;
+    */
+}
 
-        #showcase{
-            border:.2rem solid none;
-            padding:3rem;
-            background-image:url(/images/pmusicnotesbg.jpeg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position:bottom -7rem center;
-        }
-    }
-    @media only screen and (min-width:1400px){
-        #features{
-            background-image: linear-gradient(to bottom, #c0b0e9, #cebfd6);;
-        }
-        #pagefooterlinks{
-            display: block;
-        }
-        #showcase{
-            border:.2rem solid none;
-    
-            padding:3rem;
-            background-image:url(/images/pmusicnotesbg.jpeg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            
-            background-position:bottom -15rem center;
-        }
-        #features .container{
-            padding-top:2rem;
-            background-color: burlywood;
-            background-image: linear-gradient(to bottom, #c0b0e9, #cebfd6);
-            border:2px dashed none;
-            display:flex;
-            gap:1rem;
-            justify-content: space-between;
-            flex-direction:row;
-        }
-    }
+/* Easy Pixel Calculations with rem units */
+body{
+    font-size:1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+
+}
+
+/* Fix browser bounce on macs */
+body{
+    overflow-x:auto;
+    width:100%;
+    overscroll-behavior: none;
+    background-image: linear-gradient( #bfb3eb, #b3ace8);
+    background-color: #b3ace8;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+p{
+    margin:1rem 0 1rem 0;
+}
+h1,h2{
+    text-align: center;
+}
+h1,h2, h3{
+    line-height:1.2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+li{
+    line-height:2;
+}
+/* General Mobile FIrst CSS */
+
+.container{
+
+    max-width:120.0rem;
+    margin:auto;
+    padding:0 3rem 0 3rem;
+}  
 

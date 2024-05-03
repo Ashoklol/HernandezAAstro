@@ -5,12 +5,17 @@
 
         <section id="workthumbnails">
             <div class="thumbnail">
-                <img class="thumb" src="images/canvas1thumb.png" alt="Canvas 1">
-                <img class="thumb" src="images/PBP1thumb.png" alt="PaintBrush Prototype 1">
-                <img class="thumb" src="images/PBP2.png" alt="PaintBrush Prototype 2">
-                <img class="thumb" src="images/Canvasinter.png" alt="Canvas Interface">
-                <img class="thumb" src="images/PB App.png" alt="PaintBrush App">
-                <img class="thumb" src="images/afb001.png" alt="AFB001 WAD">
+                <a href="https://chsserver01.org/2023/ahernandez062023/Activities/CanvasDrawing1/canvasdrawing1.html" data-tooltip="Canvas 1" target="new"><img class="thumb" src="images/canvas1thumb.png" alt="Canvas 1"></a>
+
+                <a href="https://chsserver01.org/2023/ahernandez062023/Activities/PaintBrushPrototype1/paintbrushprototype.html" data-tooltip="PaintBrush 1" target="new"><img class="thumb" src="images/PBP1thumb.png" alt="PaintBrush Prototype 1"></a>
+
+                <a href="https://chsserver01.org/2023/ahernandez062023/Demos/PaintBrushV1/paintbrushv1.html" data-tooltip="PaintBrush 2"target="new"> <img class="thumb" src="images/PBP2.png" alt="PaintBrush Prototype 2"></a>
+
+                <a href="https://chsserver01.org/2023/ahernandez062023/Demos/CanvasInterface/canvasinterface.html" data-tooltip="Canvas Inter" target="new"><img class="thumb" src="images/Canvasinter.png" alt="Canvas Interface"></a>
+
+                <a href="https://chsserver01.org/2023/ahernandez062023/Activities/PaintBrushPrototypeUndo/paintappprot5clearbuttonstarter.html" data-tooltip="PB App" target="new"><img class="thumb" src="images/PB App.png" alt="PaintBrush App"></a>
+
+                <a href="https://chsserver01.org/2023/ahernandez062023/Activities/AFB001/afb001.html" data-tooltip="AFB001" target="new"><img class="thumb" src="images/afb001.png" alt="AFB001 WAD"></a>
             </div>
         </section>
 
@@ -34,3 +39,239 @@
 
 </section>
 <!-- End Semesters -->
+
+<style>
+     /*  SEMESTERS */
+    #semesters{
+        min-height:200px;
+        padding:2rem 0 2rem 0;
+        background-color: lightgreen;
+        background-image: linear-gradient(to bottom, #fdfcfd, #dbc8d8);
+    }
+    #semesters h2, #semesters h3{
+        padding:2rem 0 2rem 0;
+    }
+    #semesters h2{
+        font-size:4rem;
+    }
+    #semesters h3{
+        font-size:2.5rem;}
+    
+    .assignments a {
+        color:#6b5c9f;
+        text-shadow: 1px 1px #403b80;
+        
+    }
+
+    /* THUMBNAIL SECTIONS OF SEMESTERS */
+    .thumbnail{
+        background-color: #d1c3d8;
+        border:2px solid #403b80;
+        display:flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        align-content: center;
+        box-shadow: .2rem .2rem 1rem  #403b80;
+        transition:all 1s;
+    }
+    .thumb{
+        width:150px;
+        height:150px;
+        transform: scale(.8);
+        border:1px solid white;
+        transition: all 2s;
+    }
+    .thumbnail a {
+        background-color: none;
+        position:relative;
+    }
+    .thumb:hover{
+        animation-name: tilt;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        transition: all 1s;
+    }
+    
+    .thumbnail a[data-tooltip]::after{
+        background-color: #6b517848;
+        color:white;
+        padding:.5rem;
+        content: attr(data-tooltip);
+        position:absolute;
+        z-index:1;
+        top:-25%;
+        left:10%;
+        right:10%;
+        border-radius: 10px;
+        text-align: center;
+        transform: scale(0) ;
+        transition: all .5s;
+    }
+    .thumbnail a[data-tooltip]:hover::after{
+        background-color: none;
+        transform: scale(1);
+        
+        left:5%;
+    
+    }
+    @keyframes tilt{
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: scale(1);
+        }
+    }
+
+
+    /* media queries */
+    @media only screen and (min-width:320px){
+        #features{
+            background-color: #d0c5f2;
+        }
+    }
+    @media only screen and (min-width:480px){
+        #features{
+            background-color: blue;
+        }
+        #pagefooter h3{
+            padding-bottom:1.5rem;
+            text-shadow:0 0 .2rem #604e68;
+        }
+        #showcase{
+            border:.2rem solid none;
+            
+            padding:3rem;
+            background-image:url(/images/pmusicnotesbg.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            background-position:center;
+        }
+
+        #features{
+        background-image: linear-gradient(to bottom, #cfc3eb, #cebfd6);
+    }
+}
+    @media only screen and (min-width:768px){
+        #features{
+            background-color: yellow;
+        }
+        .card{
+            flex-basis:30%;
+        }
+        #features .container{
+            flex-direction: row;
+        }
+        h1,h2{
+            text-align: center;
+        }
+        #pageheader .container{
+            position:sticky;
+        }
+        #pagefooterlinks{
+            text-shadow:0 0 .2rem #604e68;
+            text-decoration: none;
+            
+        }
+        #pagefooter h3{
+            padding-bottom:1.5rem;
+            text-shadow:0 0 .2rem #604e68;
+        }
+        #showcase{
+            border:.2rem solid none;
+            padding:3rem;
+            background-image:url(/images/pmusicnotesbg.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+    
+            background-position:bottom -3rem center;
+        }
+        #features{
+            background-image: linear-gradient(to bottom, #cfc3eb, #cebfd6);
+        }
+        #features .container{
+            padding-top:2rem;
+            background-image: linear-gradient(to bottom, #c0b4ea, #cebfd6);
+        
+        }
+    }
+    
+    @media only screen and (min-width:1024px){
+        #features{
+            background-image: linear-gradient(to bottom, #bfb3eb, #cebfd6);
+        }
+        #logosbig{
+            display: block;
+            margin: auto;
+        }
+        #showcase blockquote{
+            text-align: center;
+        }
+        #logossmall{
+            display: none;
+        }
+        #showcase{
+            border:.2rem solid none;
+            padding:3rem;
+            background-image:url(/images/pmusicnotesbg.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            background-position:bottom -1rem center;
+        }
+    }
+    @media only screen and (min-width:1200px){
+        #features{
+            background-image: linear-gradient(to bottom, #bfb3eb #cebfd6);;
+        }
+        #pagefooterlinks{
+            display: block;
+            background-color: none;
+            gap: -2rem;
+        }
+        #pagefooterlinks p{
+            display: block;
+            background-color: none;
+            margin-top:-.5rem;
+        }
+
+        #showcase{
+            border:.2rem solid none;
+            padding:3rem;
+            background-image:url(/images/pmusicnotesbg.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position:bottom -7rem center;
+        }
+    }
+    @media only screen and (min-width:1400px){
+        #features{
+            background-image: linear-gradient(to bottom, #c0b0e9, #cebfd6);;
+        }
+        #pagefooterlinks{
+            display: block;
+        }
+        #showcase{
+            border:.2rem solid none;
+    
+            padding:3rem;
+            background-image:url(/images/pmusicnotesbg.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            background-position:bottom -15rem center;
+        }
+        #features .container{
+            padding-top:2rem;
+            background-color: burlywood;
+            background-image: linear-gradient(to bottom, #c0b0e9, #cebfd6);
+            border:2px dashed none;
+            display:flex;
+            gap:1rem;
+            justify-content: space-between;
+            flex-direction:row;
+        }
+    }
+</style>

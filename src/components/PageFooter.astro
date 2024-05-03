@@ -20,3 +20,215 @@
     <!-- End Container -->
 </footer>
 <!-- End Pagefooter -->
+
+<style>
+
+    /* PAGE FOOTER */
+
+    #pagefooter{
+        color:#fff;
+        text-align: center;
+        padding:2rem;
+        padding-top:6rem;
+        background-color: #dbc8d8;
+
+    }
+    #pagefooter .container{
+        background-color: #decbda;
+        border:2px dashed #604e68;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #pagefooter a{
+        color:white;
+        text-shadow:0 0 1rem #604e68;
+    }
+    #pagefooter a:hover{
+        color:#403b80;
+        text-shadow:0 0 .5px #8d7b95;
+
+    }
+    #pagefooter h3{
+        padding-bottom:3rem;
+        text-shadow:0 0 .2rem #604e68;
+        color:white;
+        text-shadow:0 0 1rem #604e68;
+    }
+    #pagefooter #author{
+        color:#736279;
+        text-shadow:none;
+        
+        font-size:12px;
+    }
+    #pagefooter #quote{
+        color:#604e68;
+        text-shadow:0 0 .2rem white;
+        
+    }
+    #pagefooterlinks{
+        text-shadow:0 0 .2rem #604e68;
+        text-decoration: none;
+        display: none;
+    }
+    blockquote::before{
+        font-size:24px;
+        background-color: none;
+        content:"“"
+    }
+    blockquote::after{
+        font-size:24px;
+        background-color: none;
+        content:"”"
+    }
+
+    /* media queries */
+    @media only screen and (min-width:320px){
+        #features{
+            background-color: #d0c5f2;
+        }
+    }
+    @media only screen and (min-width:480px){
+        #features{
+            background-color: blue;
+        }
+        #pagefooter h3{
+            padding-bottom:1.5rem;
+            text-shadow:0 0 .2rem #604e68;
+        }
+        #showcase{
+            border:.2rem solid none;
+            
+            padding:3rem;
+            background-image:url(/images/pmusicnotesbg.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            background-position:center;
+        }
+
+        #features{
+        background-image: linear-gradient(to bottom, #cfc3eb, #cebfd6);
+    }
+}
+    @media only screen and (min-width:768px){
+        #features{
+            background-color: yellow;
+        }
+        .card{
+            flex-basis:30%;
+        }
+        #features .container{
+            flex-direction: row;
+        }
+        h1,h2{
+            text-align: center;
+        }
+        #pageheader .container{
+            position:sticky;
+        }
+        #pagefooterlinks{
+            text-shadow:0 0 .2rem #604e68;
+            text-decoration: none;
+            
+        }
+        #pagefooter h3{
+            padding-bottom:1.5rem;
+            text-shadow:0 0 .2rem #604e68;
+        }
+        #showcase{
+            border:.2rem solid none;
+            padding:3rem;
+            background-image:url(/images/pmusicnotesbg.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+    
+            background-position:bottom -3rem center;
+        }
+        #features{
+            background-image: linear-gradient(to bottom, #cfc3eb, #cebfd6);
+        }
+        #features .container{
+            padding-top:2rem;
+            background-image: linear-gradient(to bottom, #c0b4ea, #cebfd6);
+        
+        }
+    }
+    
+    @media only screen and (min-width:1024px){
+        #features{
+            background-image: linear-gradient(to bottom, #bfb3eb, #cebfd6);
+        }
+        #logosbig{
+            display: block;
+            margin: auto;
+        }
+        #showcase blockquote{
+            text-align: center;
+        }
+        #logossmall{
+            display: none;
+        }
+        #showcase{
+            border:.2rem solid none;
+            padding:3rem;
+            background-image:url(/images/pmusicnotesbg.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            background-position:bottom -1rem center;
+        }
+    }
+    @media only screen and (min-width:1200px){
+        #features{
+            background-image: linear-gradient(to bottom, #bfb3eb #cebfd6);;
+        }
+        #pagefooterlinks{
+            display: block;
+            background-color: none;
+            gap: -2rem;
+        }
+        #pagefooterlinks p{
+            display: block;
+            background-color: none;
+            margin-top:-.5rem;
+        }
+
+        #showcase{
+            border:.2rem solid none;
+            padding:3rem;
+            background-image:url(/images/pmusicnotesbg.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position:bottom -7rem center;
+        }
+    }
+    @media only screen and (min-width:1400px){
+        #features{
+            background-image: linear-gradient(to bottom, #c0b0e9, #cebfd6);;
+        }
+        #pagefooterlinks{
+            display: block;
+        }
+        #showcase{
+            border:.2rem solid none;
+    
+            padding:3rem;
+            background-image:url(/images/pmusicnotesbg.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            background-position:bottom -15rem center;
+        }
+        #features .container{
+            padding-top:2rem;
+            background-color: burlywood;
+            background-image: linear-gradient(to bottom, #c0b0e9, #cebfd6);
+            border:2px dashed none;
+            display:flex;
+            gap:1rem;
+            justify-content: space-between;
+            flex-direction:row;
+        }
+    }
+</style>
